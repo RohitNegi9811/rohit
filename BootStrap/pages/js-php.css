@@ -1,0 +1,158 @@
+.whole {
+    display: flex;
+}
+
+.main-cont {
+    margin-left: 250px;
+    margin-top: 130px;
+}
+
+/* .main-cont :not(:hover) {
+    position: fixed;
+} */
+
+.main-cont h3 {
+    color: rgb(197, 146, 245);
+}
+
+.main-cont h3:hover {
+    color: rgb(235, 106, 106);
+}
+
+.main-cont h5 {
+    color: rgb(12, 211, 12);
+}
+
+.main-cont #m-2 {
+    width: 55%;
+    margin-left: 12%;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.main-cont #m-2:hover {
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+
+.main-cont .img2 {
+    width: 42%;
+    margin-left: 26%;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+#vid {
+    margin-left: 270px;
+    margin-bottom: 25px;
+}
+
+/* side-nav css */
+body {
+    background: #454f5d;
+    margin: 0;
+}
+
+.left-nav {
+    display: flex;
+    margin-top: 84px;
+}
+
+.sidebar {
+    background-color: black;
+    height: 65rem;
+    width: 13vw;
+    padding-top: 50px;
+    line-height: 50px;
+    margin-top: -8px;
+    position: fixed;
+}
+
+.sidebar a {
+    text-decoration: none;
+    color: white;
+}
+
+.sidebar li {
+    padding-bottom: 25px;
+    list-style: none;
+    font-size: 22.5px;
+}
+
+.sidebar li:hover {
+    padding-left: 10px;
+}
+
+p {
+    font-size: 19px;
+}
+
+li {
+    font-size: 19px;
+}
+
+.texto {
+    color: yellowgreen;
+    font-size: 20px;
+}
+
+#ul1 {
+    list-style-type: disc;
+}
+
+.ulq {
+    list-style-type: none;
+}
+
+@media screen and (max-width: 415px) {
+
+    .sidebar {
+        display: none;
+    }
+
+    .main-cont {
+        margin-left: 16px;
+        margin-top: 130px;
+    }
+
+    .main-cont h3 {
+        text-align: center;
+        font-size: 30px;
+    }
+
+    .main-cont .img2 {
+        width: 92%;
+        margin-left: 2%;
+    }
+
+    #footib {
+        display: none;
+    }
+
+    #vid {
+        margin-left: -3px;
+        width: 385px;
+    }
+
+    .main-cont .img2 {
+        width: 75%;
+        margin-left: 6%;
+    }
+
+    .main-cont #m-2 {
+        width: 95%;
+        margin-left: 0%;
+    }
+}
+
+@media screen and (max-width: 361px) {
+    li {
+        margin-left: -18px;
+    }
+
+    #vid {
+        margin-left: -7px;
+        width: 340px;
+        height: 300px
+    }
+}

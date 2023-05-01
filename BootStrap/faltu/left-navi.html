@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="left-navi.css"> -->
+<style>
+    body{
+    background: #454f5d;
+    margin: 0;
+}
+
+.left-nav{
+    display: flex;
+}
+
+.sidebar{
+    background-color: black;
+    height: 65rem;
+    width: 10vw;
+    padding: 0px;
+    padding-top: 50px;
+    line-height: 50px;
+    color: white;
+    display: none;
+    /* overflow: scroll; */
+}
+
+.sidebar li{
+    padding-bottom: 25px;
+    list-style: none;
+    font-size: 25px;
+}
+
+.sidebar li:hover{
+  padding-left: 10px;
+}
+
+.navi-img img{
+    margin-top: 5px;
+    margin-left: 10px;
+    height: 30px;
+    border-radius: 5px;
+}
+
+.navi-img #navi2{
+    margin-top: 5px;
+    margin-left: 10px;
+    height: 36px;
+    width: 41px;
+    border-radius: 5px;
+}
+
+.navi-img #navi2{
+    display: none;
+}
+
+@media screen and (max-width: 391px) {
+
+    .sidebar{
+    padding-top: 35px;
+    line-height: 25px;
+}
+
+    .sidebar li{
+    font-size: 8px;
+    margin-left: -30px;
+}
+
+.sidebar li:hover{
+  padding-left: 3px;
+}
+
+.navi-img img{
+    height: 20px;
+}
+
+}
+</style>
+</head>
+<body>
+    <div class="left-nav">
+        <div class="sidebar">
+            <nav>
+                <ul>
+                    <b>
+                        <li>Home
+                            <hr>
+                        </li>
+                        <li>About
+                            <hr>
+                        </li>
+                        <li>Intro
+                            <hr>
+                        </li>
+                        <li>CV
+                            <hr>
+                        </li>
+                        <li>Contact
+                            <hr>
+                        </li>
+                    </b>
+                </ul>
+            </nav>
+        </div>
+        <div class="navi-img">
+            <img src="../images/navi.png" id="navi1" alt="" onclick="myFunction1()">
+            <img src="../images/navi-close.jpg" id="navi2" alt="" onclick="myFunction2()">
+        </div>
+    </div>
+    <script>
+        function myFunction1() {
+            document.querySelector(".sidebar").style.display = "block";
+            document.querySelector("#navi1").style.display = "none";
+            document.querySelector("#navi2").style.display = "block";
+        } 
+        function myFunction2() {
+            document.querySelector(".sidebar").style.display = "none";
+            document.querySelector("#navi2").style.display = "none";
+            document.querySelector("#navi1").style.display = "block";
+            document.querySelector(".sidebar").style.transition = "all 300ms ease-in-out";
+        }
+
+    </script>
+</body>
+
+</html>

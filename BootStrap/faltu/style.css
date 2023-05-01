@@ -1,0 +1,44 @@
+.whole{
+    display: flex;
+}
+html {
+    scroll-behavior: smooth;
+  }
+  
+body {
+    background-image: url("1.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    width: 90vw;
+  }
+
+  #hoi {
+    padding: 2px;
+    background-color: aliceblue;
+    border-radius: 5px;
+    width: 262px;
+    margin: 10px;
+  }
+
+  #hii img {
+    width: 100%;
+    border-radius: 5px;
+  }
+
+  .card-content {
+    padding: 20px;
+  }
+
+  .loi {
+    text-decoration: none;
+  }
+
+  .loi h2 {
+    text-align: center;
+  }
